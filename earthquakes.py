@@ -64,6 +64,7 @@ for i in eq_data["features"]:
 
       eq_dict["earthquakes"].append(info)
 
+print(eq_dict)
 
 # 3) using the eq_dict dictionary, print out the information as shown below: #
 
