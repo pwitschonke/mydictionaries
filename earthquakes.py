@@ -42,7 +42,7 @@ eq_data = json.load(infile)
 # 1) Print out the number of earthquakes
 
 num = len(eq_data["features"])
-print(f"There were {num} earthquakes.\n")
+print(f"There were {num} earthquakes.\n\n")
 
 
 # 2) iterate through the dictionary and extract the location, magnitude, longitude and latitude of the location and put it in a new
@@ -65,12 +65,13 @@ for i in eq_data["features"]:
       eq_dict["earthquakes"].append(info)
 
 print("----------------- FULL EQ_DICT -----------------")
-print(eq_dict)
-print("------------------------------------------------\n")
+print("------------------------------------------------")
+print(eq_dict, '\n\n')
 
 # 3) using the eq_dict dictionary, print out the information as shown below: #
 
 print("------- EARTHQUAKES WITH A MAGNITUDE > 6 -------")
+print("------------------------------------------------")
 
 for i in eq_dict["earthquakes"]:
    print("Location:", i["location"])
