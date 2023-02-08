@@ -7,7 +7,7 @@ phonebook = {
     "Joanne": "555−3333",
 }
 
-"""
+
 
 mydictionary = dict(m=8, n=9)
 
@@ -165,6 +165,7 @@ print()
 
 
 a = phonebook.popitem() # supposed to be random, but pops the last item
+
 print(a)
 print(phonebook)
 
@@ -180,10 +181,9 @@ print("*****  start section 9 - using random and converting to list ********")
 print()
 
 
-list_of_keys = list(
-    phonebook
-)  # creates a list of keys because that is default value for dictionaries
+list_of_keys = list(phonebook)  # creates a list of keys because that is default value for dictionaries
 random_key = random.choice(list_of_keys)
+
 print(random_key)
 print(phonebook[random_key])
 
@@ -192,5 +192,5 @@ print()
 print("*****  end section 9 ********")
 print()
 
-"""
+
 print((phonebook[random.choice(list(phonebook))]))  # doing section 9 in one line
